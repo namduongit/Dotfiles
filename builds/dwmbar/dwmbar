@@ -1,0 +1,55 @@
+#!/bin/sh
+
+exec 2>&1
+printf "Loading modules...\n" | ~/.local/bin/dwmbar/dwmsetbar && sleep 1
+
+sec=0
+
+update_internet () {
+    internet="^b#1b1d2b^ ^c#86e1fc^$(~/.local/bin/dwmbar/sb_internet)"
+}
+
+update_volume () {
+    volume="^c#82aaff^$(~/.local/bin/dwmbar/sb_volume)"
+}
+update_volume
+
+update_backlight () {
+    backlight="^c#c099ff^$(~/.local/bin/dwmbar/sb_backlight)"
+}
+update_backlight
+
+update_battery () {
+    battery="^b#444a73^ ^c#c8d3f5^$(~/.local/bin/dwmbar/sb_battery)"
+}
+
+update_datetime () {
+    datetime="^b#1b1d2b^ ^c#828bb8^$(date "+%b %d %Y (%a) %H:%M") ^b#c8d3f5^^c#1b1d2b^ 󰃰 "
+}
+
+update_record() {
+    recordingicon="^c#ff757f^$(cat /tmp/recordingicon 2>/dev/null)^d^"
+}
+
+display () {
+    printf "%s\n" " $internet  $volume  $backlight $battery $datetime^d^$recordingicon" | ~/.local/bin/dwmbar/dwmsetbar
+}
+
+# signals for each module to update while updating display. RTMIN is 34
+trap "update_volume;display"    "RTMIN"
+trap "update_backlight;display" "RTMIN+1"
+trap "update_pkgs;display"      "RTMIN+2"
+trap "update_record;display"    "RTMIN+3"
+
+while true
+do
+    # how many seconds each module updates
+    [ $(( sec % 10   )) -eq 0 ] && update_internet
+    [ $(( sec % 60   )) -eq 0 ] && update_battery
+    [ $(( sec % 5    )) -eq 0 ] && update_datetime
+
+    # how often the display updates
+    [ $((sec % 5 )) -eq 0 ] && display
+
+    sleep 1 & wait && sec=$((sec + 1))
+done

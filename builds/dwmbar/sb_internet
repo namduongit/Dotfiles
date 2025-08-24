@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Ethernet
+if [ "$(cat /sys/class/net/e*/operstate 2>/dev/null)" = 'up' ]; then
+    ethericon="󰈀"
+# Wifi
+elif [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'up' ] ; then
+    wifiicon="$(awk '/^\s*w/ { print "󰤨 " int($3 * 100 / 70) "%" }' /proc/net/wireless)"
+elif [ "$(cat /sys/class/net/w*/operstate 2>/dev/null)" = 'down' ] && \
+    [ "$(cat /sys/class/net/w*/flags 2>/dev/null)" = '0x1003' ]; then
+    wifiicon="󰤭"
+else
+    wifiicon="󰞃"
+fi
+
+# TUN
+[ -n "$(cat /sys/class/net/tun*/operstate 2>/dev/null)" ] && tunicon="󰖂"
+
+# ZeroTier
+for zt in /sys/class/net/zt*; do [ -d "$zt" ] && tunicon="$tunicon󰰸"
+break; done 2>/dev/null
+
+# Tailscale
+for ts in /sys/class/net/tailscale*; do [ -d "$ts" ] && tunicon="$tunicon󰰦"
+break; done 2>/dev/null
+
+printf "%s%s%s" "$tunicon" "$ethericon" "$wifiicon"

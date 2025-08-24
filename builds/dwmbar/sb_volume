@@ -1,0 +1,21 @@
+#!/bin/sh
+
+VOL="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+
+# If muted, print 󰖁 and exit.
+[ "$VOL" != "${VOL%\[MUTED\]}" ] && echo Muted && exit
+
+VOL="${VOL#Volume: }"
+
+split() {
+    # For ommiting the . without calling and external program.
+    IFS=$2
+    set -- $1
+    printf '%s' "$@"
+}
+
+VOL="$(printf "%.0f" "$(split "$VOL" ".")")"
+
+[ "$VOL" -eq 0 ] && echo Muted && exit
+
+printf " %s" "$VOL"

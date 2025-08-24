@@ -1,0 +1,69 @@
+# --------------- Base System ---------------
+base
+base-devel
+linux
+linux-headers
+linux-firmware
+sudo
+zsh
+
+# --------------- Bootloader ---------------
+grub
+os-prober
+efibootmgr
+
+# --------------- Xorg ---------------
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xsetroot
+libx11
+libxft
+libxinerama
+
+# --------------- Input Method ---------------
+fcitx5
+fcitx5-configtool
+fcitx5-qt
+fcitx5-gtk
+fcitx5-unikey
+
+# --------------- Applications ---------------
+alacritty
+feh
+fastfetch
+git
+neovim
+rofi
+signal-desktop
+visual-studio-code-bin
+microsoft-edge-stable-bin
+xfce4-screenshooter
+yazi
+
+# --------------- Development ---------------
+jdk21-openjdk
+maven
+docker
+docker-compose
+go
+
+# --------------- Audio ---------------
+pipewire
+pipewire-pulse
+wireplumber
+pulsemixer
+
+# --------------- Utilities ---------------
+acpid
+brightnessctl
+btop
+openssh
+tailscale
+upower
+xclip
+xsel
+unrar
+unzip
+zip
+ueberzugpp

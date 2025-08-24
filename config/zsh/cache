@@ -1,0 +1,1885 @@
+nvim .zshrc
+clear
+ls -la
+rm -rf .bash_history .bash_logout .bash_profile
+clear
+mkdir .config
+ls
+ls -la
+cd .config
+ls
+mkdir alacritty
+cd alacritty
+cd ..
+mkdir zsh
+ls
+cd zsh
+mkdir plugins
+cd plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+ls
+cd
+ls
+nvim .zshrc
+source .zshrc
+clear
+source .zshrc
+nvim .zshrc
+source .zshrc
+ls
+cd builds
+ls
+cd 
+clear
+ls -la
+nvim .zshrc
+source .zshrc
+sudo pacman -S firefox
+firefox
+ls
+cd builds
+ls
+git clone https://aur.archlinux.org/yay.git\
+    cd yay
+ls
+makepkg -si
+ls
+cd ..
+    yay -S visual-studio-code-bin
+poweroff
+startx
+firefox 
+nmtui
+nmtui
+ping google.com
+nmtui
+ping google.com
+nmtui
+echo $SHELL
+clear
+nmtui
+reboot
+nmtui
+firefox
+exit
+ls
+cd builds
+ls
+cd dwm
+code .
+exit
+firefox
+exit
+startx
+firefox
+firefox
+ls
+cd builds
+ls
+git clone https://github.com/LukeSmithxyz/dwmblocks.git
+ls
+ls
+cd ..
+ls
+ls
+cd builds
+ls
+git clone https://github.com/namduongit/dotfiles
+cd dotfiles
+ls
+cd .local
+ls
+ls
+mkdir -p ~/.local/
+cp dwmbar ~/.local
+cp -r dwmbar ~/.local
+pacman -S rofi
+sudo pacman -S rofi
+ls
+cd ..
+cd ..
+cd dotfiles/.config
+ls
+mkdir -p ~/.config
+cp -r rofi ~/.config
+clear
+cd 
+ls -la
+ls
+cat .zshrc
+cd .config
+ls
+cd zsh
+ls
+cd cache
+ls
+ls
+cd cache
+cat cache
+poweroff
+ls
+patch < patches/dwm-attachaside-6.4.diff
+sudo make clean install
+sudo pacman -S rofi
+patch < patches/dwm-status2d-6.3.diff
+sudo make clean install
+patch < patches/dwm-statuscmd-20210405-67d76bd.diff
+sudo make clean install
+patch < patches/dwm-uselessgap-6.2.diff
+sudo make clean install
+clear
+sudo make clean install
+clear
+sudo make clean install
+sudo make clean install
+clear
+sudo make clean install
+code 
+exit
+sudo make clean install
+sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-prime libva-nvidia-driver xf86-video-intel mesa mesa-utils intel-driver
+sudo pacman -Sy nvidia nvidia-utils nvidia-settings nvidia-prime libva-nvidia-driver xf86-video-intel mesa mesa-utils intel-driver
+sudo pacman -Sy nvidia nvidia-utils nvidia-settings nvidia-prime libva-nvidia-driver xf86-video-intel mesa mesa-utils intel-media-driver
+nvim builds/dwm/config.h
+sudo make clean install
+clear
+cd builds/dwm
+sudo make clean install
+startx
+startx
+clear
+startx
+nvidia-smi
+clear
+reboot
+nvidia-smi
+exit
+exit
+ls -la
+cd .config
+ls
+cd ..
+cd .local
+ls
+mkdir bin
+mv dwmbar bin
+cd bin
+ls
+clear
+ls
+cd dwmbar
+ls
+ls -la
+chmod +x dwm* sb_*
+ls -la
+clear
+ls
+./dwmbar
+exit
+ls
+cd .local/bin/dwmbar
+ls
+./dwmbar
+pwd
+cd
+nvim .xinitrc
+ls
+cd .local/bin/dwmbar
+ls
+cat dwmsetbar
+nvim .xinitrc
+clear
+exit
+nvim /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf
+clear
+ls
+cd builds
+;s
+ls
+   yay -S microsoft-edge-stable-bin
+ls -la
+cd
+ls -la
+sudo pacman -Rns firefox
+ls -la
+rm -rf .mozilla
+clear
+exit
+startx
+clear
+startx
+cd builds/dwm
+nvim config.h
+clear
+ls
+reboot
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-unikey
+clear
+ls
+cd builds
+ls
+cd ..
+cd .local
+cd bin
+ls
+cd dwmbar
+clear
+ls
+cat dwmbar
+clear
+cat dwmsetbar
+./dwmbarb
+./dwmbar
+ls
+sudo pacman -S xorg-xsetroot\
+
+sudo pacman -S pipewire pipewire-pulse wireplumber\
+
+./dwmbar
+systemctl --user enable --now pipewire pipewire-pluse wireplumber
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+./dwmbar
+exit
+git reset --hard
+ls
+cd ..
+ls
+mv dwm/patches .
+cd builds
+ls
+rm -rf dwm
+ls
+git clone https://git.suckless.org/dwm
+mv patches dwm
+cd dwm
+sudo make clean install
+code .
+exit
+ls
+nvim .xinitrc
+clear
+exit
+clear
+ls
+cd dwm
+patch < patches/dwm-status2d-6.3.diff
+sudo make clean install
+sudo pacman -S unzip
+ls
+ls -la
+sudo chown $USER:$USER config.h
+sudo make clean install
+ls
+cd .xinitrc
+nvim .xinitrc
+sudo pacman -S unzip zip unrar gzip tar
+ls
+cd Downloads
+ls
+unzip 'Segoe UI Font Family.zip'
+ls
+cd segoe-ui
+ls
+cd
+ls
+mkdir .fonts
+cd Downloads
+cd segoe-ui
+ls
+mv *.ttf ~/.fonts
+ls
+cd .
+ls
+cd ..
+ls
+cp 0xProtoNerdFont-Regular.ttf ~/.fonts
+ls
+cd
+cd .fonts
+ls
+fc-list
+fc-list | grep 0x
+cd
+cd .local
+cd bin
+ls
+cd dwmbar
+exit
+ls -la
+nvim .zprofile
+cd builds/dwm
+nvim config.h
+exit
+ls
+cd builds
+ls
+git clone https://github.com/namduongit/linux-note.git
+ls
+cd linux-note
+ls
+cd .vscode
+ls
+cat settings.json
+sudo make clean install
+sudo make clean install
+exit
+exit
+sudo make clean install
+cat namduong.log
+nvim sudo nvim /usr/share/X11/xkb/symbols/inet
+sudo pacman -S rtkit\
+
+sudo systemctl enable --now rtkit-daemon\
+
+sudo pacman -S nvidia nvidia-utils\
+
+cd /usr/share/X11
+ls
+cd xkb
+ls
+cd symbols
+cd i
+ls
+nvim inet
+cd 
+nvim .xinitrc
+clear
+cd 
+cd .config
+ls
+cd zsh
+ls
+nvim .zshrc
+clear
+source .zshrc
+source .zshrc > namduong.it 2>&1
+cat namduong.it
+nvim
+cat .zshrc
+cat namduong.log
+clear
+exit
+cd .config/zsh
+ls
+cd plugins
+ls
+ls -la
+cd 
+cat .zshrc
+nvim .zshrc
+source .zshrc
+exit
+exit
+cd .config
+ls
+cd alacritty
+ls
+nvim alacritty.toml
+clear
+exit
+ls
+nvim .config/alacritty/alacritty.toml
+exit
+nvim .config/alacritty/alacritty.toml
+ls
+cd builds
+cd ..
+ls -la
+cd builds/dwm
+exit
+nvim .zshrc
+sudo pacman -S xrandr
+ls -la
+rm -rf namduong.*
+ls -la
+fcitx5-configtool
+fcitx5-config-qt
+fcitx5-config-qt
+fcitx5-config-qt
+exit
+clear
+cd ..
+patch < patches/dwm-uselessgap-6.2.diff
+sudo make clean install
+sudo make clean install
+patch < patches/dwm-attachaside-6.4.diff
+sudo make clean install
+clear
+sudo pacman -Rns tff-jetbrains-nerd-fonts
+sudo pacman -S feh
+ls
+cd sudo
+ls
+cd
+clear
+ls
+cd sudo
+ls
+cat sudo
+rm -rf sudo
+clear
+ls
+mkdir Pictures
+cd Pictures
+mkdir desktop
+cd desktop
+mv ~/Downloads/*.png .
+ls
+ls
+nvim .xinitrc
+clear
+nvim .xinitrc
+ls
+sudo pacman -S fastfetch
+fastfetch
+exi
+exit
+startx
+clear
+startx
+clear
+startx
+startx
+clear
+startx
+startx > namduong.log 2>&1
+clear
+ls
+rm -rf namduong.log
+startx > namduong.log 2>&1
+clear
+startx
+clear
+startx
+startx
+ls -la
+echo $HOME
+cd builds
+ls
+sudo cp /etc/X11/xorg.conf.d
+sudo cp /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo cp -r /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo cp -r /etc/X11/xorg.conf.d/30-touchpad.conf .
+cp -r ~/builds/dwm ../
+poweroff
+fcitx5
+clear
+ls
+cd .config
+ls
+mkdir X11
+ls
+cd X11
+nvim xinitrc
+ls
+cp ~/.xinitrc xinitrc
+ls
+cd 
+nvim .zprofile 
+clear
+yay -S nvm
+which nvm
+nvm --version
+clear
+nvm install 18
+nvim .zshrc
+clear
+source .zshrc
+nvm install 18
+node -v
+clear
+sudo pacman -S jdk21-openjdk
+sudo archlinux-java set java-21-openjdk
+java --version
+clear
+nvim .config/alacritty/alacritty.toml
+exit
+exit
+startx
+startx > namduong.log 2>&1
+cat namduong.log
+fcitx5
+sudo nvim /etc/modprobe.d/blacklist-nouveau.conf
+sudo mkinitcpio -P
+sudo pacman -Syu fontconfig\
+
+fc-cache -rv\
+
+sudo pacman -S upower
+sudo systemctl enable --now upower\
+
+reboot
+startx > namduong.log 2>&1
+startx
+sudo startx
+cat .xinitrc
+cd .config/X11/
+ls
+rm -rf xinitrc
+cd
+cat .zprofile
+nvim .zprofile
+cat .local/share/xorg/Xorg.0.log
+clear
+startx
+exit
+ls
+rm -rf namduong.log
+clear
+cd builds
+ls
+cd ..
+ls
+cd builds
+ls
+cd dotfiles
+ls
+fcitx5
+exit
+startx
+ls
+cd ..
+ls
+cd Dotfiles
+ls
+pacman -Qent > package/pacman
+sudo pacman -S nvidia-utils nvidia-settings
+pacman -Q > package/pacman
+cp -r ~/builds/yay builds
+cp -r ~/.config/ .config
+mv .config ../
+cd 
+ls
+cd .local
+ls
+cd -
+ls -la
+cat .zcompdump
+clear
+poweroff
+cd builds
+cd dwm
+ls -la
+rm -rf .git
+cp -r ~/.local .
+cp -r ~/Pictures/*.png images
+ls ~/Pictures
+cp -r ~/Pictures/desktop/*.png images
+cp -r ~/.zshrc .local/profile
+cp -r ~/.zprofile .local/profile
+cp -r ~/.xinitrc .local/profile
+cp install.sh /namduong
+cp install.sh namduong
+cp install.sh namduong/
+cp install.sh namduong/
+cp --mkdir install.sh namduong/
+cp ~/.fonts/* fonts
+git init 
+git config --golbal user.name "Nguyen Nam Duong"
+git config --global user.name "Nguyen Nam Duong"
+git config --global user.email "nguyennamduong205@gmail.com"
+git init 
+git add install.sh
+git commit -m "Run here"
+git add .
+git add .
+git commit -m "Build some thing"
+git add README.md
+git commit -m "Update later"
+git remote add origin https://github.com/namduongit/dotfiles.git\
+
+git push -u origin main
+git branch -M main
+git push -u origin main
+exit
+sudo pacman -S signal
+nmtui
+yay -S signal-desktop
+exirt
+exit
+ls
+cd ..
+ls
+mkdir ~/backup
+cp -r dwm ~/backup
+cp -r dwm ~/backup
+ls ~/backup
+ls
+clear
+ls -la
+git init
+git config --golbal user.name "Nguyen Nam Duong"
+git config --global user.name "Nguyen Nam Duong"
+git config --global user.email "nguyennamduong205@gmail.com\
+"
+git remote add origin https://github.com/namduongit/dwm.git
+git add .
+git commit -m "Push my DWM config"
+git branch -M main\
+
+git push -u origin main
+rm -rf .git
+git init
+git config --global user.email "nguyennamduong205@gmail.com\
+"
+git config --global user.name "Nguyen Nam Duong"
+git init
+git add .
+git commit -m "Push my DWM config"
+git branch -M main\
+
+git push -u origin main
+git push -u origin main
+git push
+git push main
+clear
+git branch -M main\
+
+git push 
+git push -u
+git push -u origin main
+git remote add origin https://github.com/namduongit/dwm.git
+git push -u origin main
+ls
+rm -rf Downloads/dwm
+clear
+cd builds
+ls
+cd dotfiles
+ls
+mv Dotfiles ../
+ls
+cd ..
+ls
+rm -rf dotfiles
+clear
+mv Dotfiles dotfiles
+ls
+cd dotfiles
+code .
+exit
+ks
+ls
+cd Downloads
+ls
+rm -rf "Segoe UI Font Family.zip"
+ls
+celar
+clear
+ls
+rm -rf segoe-ui
+ls
+rm -rf 0xProtoNerdFont-Regular.ttf
+ls
+clear
+mv *.jpg ../builds/images
+ls
+mv *.png ../builds/images
+cd ..
+rm -rf backup
+cd builds
+ls
+cd images
+ls
+mv *-linux-*.jpg linux
+ls
+mv *-linux-*.png linux
+ls
+mv *-ultra-*.png dragon-ball
+mv *-ultra-*.jpg dragon-ball
+clear
+ls
+mv Goku.png dragon-ball
+mv Goku-*.png dragon-ball
+mv goku-*.png dragon-ball
+mv goku-*.jpg dragon-ball
+ls
+mv wp102321-kubuntu-wallpaper-hd.jpg linux
+ls
+cd linux
+ls
+mv wp102321-kubuntu-wallpaper-hd.jpg 1.png
+mv wp6252833-amoled-linux-wallpapers.jpg 2.png
+mv wp9309505-4k-desktop-linux-wallpapers.jpg 3.png
+mv wp9309506-4k-desktop-linux-wallpapers.jpg 4.png
+mv wp9309560-4k-desktop-linux-wallpapers.png 5.png
+mv wp9309716-4k-desktop-linux-wallpapers.jpg 6.png
+l
+ls
+cd ,,
+cd ..
+ls
+rm -rf WorkSide.png
+ls
+mkdir fantasy
+ls
+cd fantasy
+ls
+clear
+ls
+cd ..
+ls
+mkdir minecraft
+cd minecraft
+mv ~/Downloads/* .
+ls
+mv 1313226.png 2.png
+mv 1391342.png 3.png
+mv 556720.jpg 4.png
+mv 556724.jpg 5.png
+mv 733614.png 6.png
+clear
+mv minecraft-2025-games-5k-3840x2160-21988.jpg 7.png
+mv minecraft-legends-3840x2160-11204.jpg 8.png
+cd ..
+ls
+mkdir one-piece
+cd one-piece
+mv ~/Downloads/* .
+l
+ls
+mv 10137769.jpg 1.png
+mv 11020372.jpg 2.png
+mv 11020406.png 3.png
+mv 11020492.jpg 4.png
+mv 11020503.jpg 5.png
+mv 1331390.jpg 6.png
+mv 9099452.png 7.png
+clear
+cd ..
+ls
+git init
+git config --global user.email "nguyennamduong205@gmail.com"
+git config --global user.name "Nguyen Nam Duong"
+git inti
+git int
+git init
+echo "# Wallpaper Images - Desktop" >> README.md
+ls
+git add .
+git commit -m "Push my images desktop"
+git branch -M main
+git remote add origin https://github.com/namduongit/images.git\
+
+git push -u origin main
+code .
+exit
+ls
+cat namduong.log
+clear
+rm -rf namduong.log
+ls
+ls -la
+cd Downloads
+git clone https://git.suckless.org/dwm
+clear
+git clone https://git.suckless.org/dwm
+ls
+cd dwm
+ls -la
+exit
+git push -u origin main
+cd 
+cd .local
+ls
+cd share
+ls
+cd Trash
+ls
+cd ..
+cd applications
+ls
+cd
+pacman -Qq > pacman_all_packages.txt
+ls
+cat pacman_all_packages.txt
+rm -rf pacman_all_packages.txt
+cd -
+ls
+cd ..
+ls
+ls -la
+rm -rf .git
+ls -la
+mv images ../
+cd ..
+ls
+cd images
+ls
+ls
+mkdir linux
+mkdir dragon-ball
+cd ..
+ls
+cd dotfiles
+pacman -Qqe > pacman_explicit_packages.txt
+cp ../images/dragon-ball/Goku-Kamehameha.png ./builds
+git init
+git config --global user.name "Nguyen Nam Duong"
+git config --global user.email "nguyennamduong205@gmail.com"
+git init
+git add .
+ls -la
+rm -rf .git
+git init
+git config --global user.name "Nguyen Nam Duong"
+git config --global user.email "nguyennamduong205@gmail.com"
+git add .
+git remote add origin https://github.com/namduongit/Dotfiles.git
+git add ,
+git add .
+git commit -m "I will check error later"
+git push -u origin maion
+git push -u origin main
+git branch -M main
+git push -u origin main
+startx > namduong.log 2>&1
+fcitx5
+ls
+ls -la
+ls
+cd Downloads
+ls
+cd ..
+ls
+mkdir Document
+rm -rf Document
+mkdir repository
+ls
+cd repository
+ls
+git clone https://github.com/namduongit/react-linh-food.git
+poweroff
+sudo pacman -S xorg-xrandr
+reboot
+xrandr --output HDMI-1-0 --auto --right-of eDP1
+exit
+fcitx5
+sudo pacman -S xfce4-screenshooter\
+
+exit
+npm install --force
+npm start
+git add src/
+git commit -m "Change info about owner"
+git add README.md doc/
+git commit -m "Update description"
+git push -u origin main
+fastfetch
+exit
+mv learnspring ../learn-spring
+sudo pacman -S brightnessctl
+systemctl --user enable --now brightnessctl
+ brightnessctl set 50%
+ brightnessctl set 40%
+clear
+sudo pacman -S pavucontrol
+clear
+fastfetch '\
+'\\
+clear
+clear
+fastfetch
+exit
+ls
+nvim .zshrc
+clear
+source .zshrc
+start-docker archlinux-keyring-wkd-sync.service
+sudo usermod -aG docker $USER\
+
+sudo pacman -S docker-compose\
+
+fcitx5-config-qt
+exit
+cd -
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+claer
+clear
+pavucontrol
+fcitx5-config-qt
+sudo pacman -S docker
+startx
+cd .config/fcitx5
+ls
+cat conf
+cd conf
+ls
+poweroff
+nvim .zshrc
+source .zshrc
+start-hdmi
+clear
+exiit
+exit
+ /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_1xgwe439pw90qxt3xib2rzkrq.argfile com.learnspring.learnspring.LearnspringApplication 
+timedatectl set-ntp true\
+
+clear
+docker ps
+docker exec -it mysql -u root -p
+docker -it exec mysql -u root -p
+docker -it exec mysql:lts -u root -p
+docker exec -it mysql_server mysql -u root -p
+pavucontrol
+exit
+startx
+docker -it exec mysql_server -u namduongit -p
+docker exec -it mysql_server -u namduongit -p
+docker exec -it mysql_server mysql -u root -p\
+
+docker exec -it mysql_server mysql -u namduongit -p\
+
+poweroff
+cd docker
+clear
+docker compose up
+docker pull mysql:lts
+start-docker
+docker pull mysql:lts
+docker pull mysql:lts
+docker compose up
+ /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+clear
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+clear
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+sudo pacman -S docker-compose
+fcitx5
+startx
+fastfetch
+reboot
+startx > namduong.log 2>&1
+reboot
+xrandr --output HDMI-1-0 --auto --right-of eDP1
+exit
+startx
+cd docker
+docker compose up
+start-docker
+docker compose up
+docker exec -it mysql_server mysql -u namduongit -p
+clear
+poweroff
+cd oop
+go run Person.go
+rm -rf main.go
+go mod init learn-go
+go run main.go
+clear
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+clear
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go https://jsonplaceholder.typicode.com/posts/1\
+
+go run main.go https://jsonplaceholder.typicode.comb/posts/1\
+
+fcitx5
+sudo pacman -S go
+go version
+nmtui
+ping google.com
+ls
+rm -rf dev-learn
+rm -rf namduong.log
+clear
+ls
+mkdir Document
+ls
+mv Document Documents
+ls
+start-hdmi
+clear
+exit
+ls
+cd repository
+ls
+exit
+startx
+clear
+fcitx5
+cd server
+go mod init github.com/namduongit/go-task
+go mod tidy
+go get github.com/gin-gonic/gin go get gorm.io/gorm go get gorm.io/driver/mysql go get github.com/golang-jwt/jwt/v5
+go get github.com/gin-gonic/gin
+go get gorm.io/gorm
+go get gorm.io/driver/mysql
+go get github.com/golang-jwt/jwt/v5
+l
+ls
+ls
+cd client
+npm init
+npm init -y
+npm i axios
+npm i react-router-dom
+npm create vite@latest todo-diary -- --template react\
+
+npm start
+npm run dev
+npm run dev
+npm create vite@latest .\
+
+npm install
+npm run dev
+node -v
+nvm install 20
+npm run dev
+npm install axios
+cat ~/repository/learn-spring/docker/docker-compose.yml
+git add README.md
+git commit -m "Update README"
+git add docker/
+git commit -m "Update docker"
+git add client/
+git commit -m "Push client struct"
+git push -u origin main
+poweroff
+git init
+git config user.name "Nguyen Nam Duong"
+git config user.email "\
+nguyennamduong205@gmail.com"
+git init
+git remote add origin https://github.com/namduongit/go-task.git
+git add README.md
+git commit -m "Create go-task project"
+git branch -M main
+git push -u origin main
+go mod init github.com/namduongit/go-task
+go get github.com/gin-gonic/gin
+go get gorm.io/gorm
+go get gorm.io/driver/mysql
+go get github.com/golang-jwt/jwt/v5
+rm -rf go.mod go.sum
+start-hdmi
+exit
+exit
+start-hdmi
+startx
+cd ..
+l
+ls
+cd docker
+start-docker
+docker compose up
+cd client
+npm install react-router-dom
+npm i react-router-dom
+clear
+npm run dev
+npm --version
+nvm use 20
+npm run dev
+npm install bootstrap
+npm run dev
+poweroff
+fcitx5
+start-hdmi
+exit
+cd docker
+start-docker
+docker ps
+docker container
+docker container ls
+clear
+docker compose up
+cd 
+cd Downloads
+;s
+cd Postman
+ls
+./Postman
+cd /
+ls
+cd lost+found
+ls
+ls
+ls -la
+cd ..
+ls
+cd opt
+ls
+mv ~/Downloads/Postman Postman
+sudo mv ~/Downloads/Postman Postman
+ls
+cd Postman
+ls
+cd app
+ls
+cd icons
+ls
+cd ..
+cd resources
+;s
+ls
+cd app
+;s
+ls
+clear
+ls | grep .png
+cd assets
+ls
+startx
+fcitx5
+poweroff
+cd client
+npm run dev
+nvm use 20
+npm run dev
+cd 
+cd Downloads
+ls
+unzip postman-linux-x64.tar.gz
+tar -xvzf postman-linux-x64.tar.gz\
+
+ls
+cd Postman
+which code
+nvim ~/.local/share/applications/postman.desktop\
+
+chmod +x ~/.local/share/applications/postman.desktop\
+
+update-desktop-database ~/.local/share/applications\
+
+nvim ~/.local/share/applications/postman.desktop\
+
+docker ps
+docker exec -it go-task mysql:lts -u namduongit -p
+docker exec -it go-task mysql -u namduongit -p
+cd client/src/images
+cp ~/Downloads/login.png register.png
+cp ~/Downloads/register.png login.png
+cd ..
+cd ..
+cd ..
+cd docker
+docker compose up
+fastfetch
+clear
+ls
+rm -rf server
+mkdir server
+cd server
+ls
+go mod init github.com/namduongit/go-task
+go get github.com/gin-gonic/gin\
+
+go get gorm.io/gorm\
+
+go get gorm.io/driver/mysql\
+
+go get golang.org/x/crypto/bcrypt\
+
+go get github.com/golang-jwt/jwt/v5\
+
+go get github.com/joho/godotenv\
+
+fastfetch
+go run main.go
+go run main.go
+go run main.go
+go get github.com/gin-gonic/gin\
+
+go get gorm.io/gorm\
+
+go get gorm.io/driver/mysql\
+
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+cd ..
+ls
+git add README.md
+git commit -m "Update README"
+git add .env
+git commit -m "Config ENV variables"
+git add client/
+git commit -m "Build some layout and page"
+git add server/ docker/
+git commit -m "Build login and register API"
+git commit -m "Build login and register API"
+git push -u origin main
+git add server/
+git commit -m "Build login and register API"
+git push -u origin main
+start-hdmi
+exit
+startx
+reboot
+xfce4-screenshooter
+exit
+start-hdmi
+cd builds
+ls
+cd dwm
+ls
+nvim config.h
+exit
+start-hdmi
+cat namduong.log
+lsmod | grep nouveau\
+
+echo "blacklist nouveau" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf\
+
+sudo mkinitcpio -P\
+
+sudo usermod -aG video namduongit\
+
+fcitx5
+startx
+startx > namduong.log 2>&1
+exit
+start-hdmi
+cat namduong.log
+lsmod | grep nouveau\
+
+lsmod | grep nvidia\
+
+cat ~/.local/share/xorg/Xorg.0.log | grep -E "(NVIDIA|nouveau|modesetting)"\
+
+sudo pacman -S acpid\
+
+sudo systemctl enable --now acpid\
+
+glxinfo | grep "OpenGL renderer"\
+
+prime-run glxinfo | grep "OpenGL renderer"\
+
+grep -R "nouveau" /usr/share/X11/xorg.conf.d/\
+
+sudo nvim /etc/X11/xorg.conf.d/20-intel.conf
+code builds/dwm
+exit
+startx > namduong.log 2>&1
+sudo make clean install
+reboot
+fcitx5
+startx > namduong.log 2>&1
+startx
+cd .local
+cd share/xorg/
+ls
+cat Xorg.0.log
+sudo rm -rf  /etc/X11/xorg.conf.d/20-intel.conf
+reboot
+start-hdmi
+exit
+df
+exit
+fcitx5
+cd .local/bin/screenshot
+ls
+ls -la
+rm -rf namduong.log
+clear
+ls -la
+cd Postman
+ls
+cd files
+ls
+cd ..
+cd ..
+-> xfce4-screenshooter --region --clipboard
+ xfce4-screenshooter --region --clipboard
+xfce4-screenshooter -f -o "xclip -selection clipboard -t image/png"\
+
+sudo pacman -S xclip\
+
+ xfce4-screenshooter --region --clipboard
+xfce4-screenshooter -f -o "xclip -selection clipboard -t image/png"\
+
+xfce4-screenshooter --region --clipboard\
+
+sudo pacman -S xclip xsel\
+
+xfce4-screenshooter --region --clipboard\
+
+gimp
+sudo pacman -S gimp
+sudo pacman -S gimp
+sudo pacman -Sy gimp
+xfce4-screenshooter --region --clipboard\
+
+gimp
+sudo pacman -Rns gimp
+xfce4-screenshooter --region -o "xclip -selection clipboard -t image/png"\
+
+clear
+ls -la
+cd .local
+ls
+cd bin
+ls
+mkdir screenshot
+cd screenshot
+nvim screenshot.sh
+chmod +x screenshot.sh
+pwd
+cd 
+nvim .zshrc
+cd builds/dwm
+nvim config.h
+sudo make clean install
+nvim config.h
+sudo make clean install
+go run main.go
+cd .
+cd ..
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.g2
+go run main.g2
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+uong
+go run main.go
+go run main.go
+ong
+xfce4-screenshooter --clipboard\
+
+xfce4-screenshooter --region --clipboard\
+
+start-hdmi
+exit
+screen-shot
+screen-shot
+fcitx5
+nvim builds/dwm/config.h
+sudo make clean install
+ls
+ls -la
+cat xfce4-screenshooter
+nvim .zshrc
+rm -rf xfce4-screenshooter
+clear
+cd builds/dwm
+sudo make clean install
+start-hdmi
+exit
+exit
+signal
+exit
+startx
+startx
+clear
+startx
+fastfetch
+fcitx5
+poweroff
+start-hdmi
+exit
+cd server
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+go run main.go
+exit
+cd docker
+start-docker
+docker compose up
+exit
+docker exec -it go-task mysql -u namduongit -p
+cd ..
+exit
+startx
+cd client
+npm run dev
+nvm use 20
+npm run dev
+npm run dev
+npm run dev
+cd ..
+git add server/
+git commit -m "Build task API and vaild token"
+git add client/ 
+git commit -m "Create Home page and Auth page"
+git push -u origin main
+poweroff
+fcitx5
+fcitx5
+poweroff
+start-hdmi
+exit
+exit
+fastfetch
+clear
+start-docker
+clear
+cat ./repository/go-task/docker/docker-compose.yaml
+cd ./repository/go-task/docker/
+fastfetch
+exit
+sudo pacman -Sy mysql-workbench
+exit
+startx
+fcitx5
+ /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+poweroff
+docker exec -it mysql_server mysql -u namduongit -p
+cd docker
+docker compose up
+fastfetch
+start-hdmi
+eexit
+exit
+nvim builds/dotfiles/package/package-list
+exit
+startx
+fc-list| grep noto
+sudo pacman -S sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+sudo pacman -S sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+ sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+cd Downloads
+ls
+gunzip Roboto.zip Roboto
+gunzip Roboto.zip
+gunzip --help
+unzip Roboto.zip -d Roboto
+ls
+mv Roboto/*.ttf ~/.fonts
+cat ~/.fonts | grep Robo
+ls ~/.fonts | grep Robo
+ sudo pacman -Rns noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+fc-cache -fv\
+
+fc-list | grep "Roboto"\
+
+l
+ls
+rm -rf login.png notes-icon-design-vector.* register.png postman-linux-x64.tar.gz Roboto Roboto.zip uri_ifs___M_fa9b9e62-bd82-4784-b154-7755adcc2907.image notes-icon-design-vector.jpg notes-icon-design-vector-removebg-preview.png
+ls
+unzip Noto_Sans,Roboto.zip -d Noto
+ls
+mv Noto/*.ttf ~/.fonts
+cd Noto
+ls
+c Noto_Sans
+ls
+cd Noto_Sans
+ls
+clear
+mv NotoSans-*.ttf ~/.fonts
+fc-cache -fv
+cd 
+cd .fonts
+ls
+reboot
+fcitx5
+start-hdmi
+exit
+startx
+ls
+cd .fonts
+ls
+rm -rf Roboto-* NotoSans-*
+;s
+ls
+cd
+cd Downloads
+;s
+ls
+rm -rf Noto Noto_Sans,Roboto.zip uri_ifs___M_fa9b9e62-bd82-4784-b154-7755adcc2907.png uri_ifs___M_fa9b9e62-bd82-4784-b154-7755adcc2907-removebg-preview.png
+ls
+unzip arial-font.zip -d Arial
+unzip times-new-roman-cufonfonts.zip -d TimeNewRoman
+mv Arial/*.ttf ~/.fonts
+mv TimeNewRoman/*.ttf ~/.fonts
+fc-cache -fv
+unzip Consolas-Font.zip -d Consolas
+mv Consolas/*.ttf ~/.fonts/
+fc-cache -fv
+fc-list
+reboot
+start-hdmi
+exit
+nvim builds/dwm/config.h
+cd builds/
+ls
+cd dwmblocks
+ls
+cd ..
+ls
+cd dwm
+ls
+sudo make clean install
+startx
+startx
+startx
+ps aux | grep dwmblocks
+which dwmblocks
+which dwm
+ps aux | grep dwmbloc
+rm -rf builds/dwmblocks
+cd builds
+ls
+sudo nvim /etc/makepkg.conf
+clear
+poweroff
+start-hdmi
+exit
+startx
+poweroff
+fcitx5
+start-hdmi
+exit
+echo "# Animation CSS" >> README.md
+git init
+git config user.email "nguyennamduong205@gmail.com"
+git config user.name "Nguyen Nam Duong"
+git init
+git add README.md
+git commit -m "Create Animation CSS project"
+git branch -M main\
+
+git remote add origin https://github.com/namduongit/animation-css.git
+git push -u origin main
+git add README.md
+git commit -m "Update README.md"
+git push -u origin mian
+git push -u origin main
+git add .
+git commit -m "Push some templates"
+git push -u origin main
+cd .config
+cd zsh
+ls
+nvim zsh-vimode
+exit
+startx
+poweroff
+fcitx5
+exit
+cd Downloads
+ls
+unzip downloadgetcookieforfplus.zip -d cookie-fb
+l
+exit
+start-hdmi
+sudo pacman -Sy obs-studio
+sudo pacman -Sy obs-studio
+exit
+sudo pacman -Sy dolphin
+exit
+exit
+exit
+exit
+startx
+sudo pacman -Rns dolphin obs-studio
+poweroff
+start-hdmi
+cd Videos
+ls
+rm -rf OBS
+exit
+'cd /\
+'
+cd /
+;s
+cd opt
+ls
+cd android-studio
+ls
+ls -la
+bin
+./bin
+code .
+sudo pacman -S thunar
+thunar
+cd Downloads
+l
+ls
+tar -zxvf android-studio-2025.1.2.12-linux.tar.gz
+ls
+mv android-studio /opt/
+sudo mv android-studio /opt/
+cd
+nvim .local/share/applications/android-studio.desktop
+exit
+startx
+fcitx5
+poweroff
+start-hdmi
+exit
+cd 
+nvim .zshrc
+clear
+exit
+ /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+java -v
+java --version
+docker ps -a
+clear
+mvn clean
+sudo pacman -S maven
+nvm -v
+nvm clean
+mvn -v
+mvn clean
+git add .
+git commit -m "Response Entity"
+ls -la
+exit
+startx
+fcitx5
+fcitx5
+docker -it exec mysql_server -u namduongit -p
+docker exec -it mysql_server mysql -u namduongit -p
+poweroff
+cd docker
+start-docker
+docker compose up
+ /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_bdpqtf71pja7b8u2p2z3dm6xt.argfile com.learnspring.learnspring.LearnspringApplication 
+clear
+ cd /home/namduongit/repository/learn-spring ; /usr/bin/env /usr/lib/jvm/java-21-openjdk/bin/java @/tmp/cp_e7gec8nbtv0vm2yx7seoxztf2.argfile com.learnspring.learnspring.LearnspringApplication 
+pavucontrol
+pavucontrol
+btop
+sudo pacman -S btop
+btop
+start-hdmi
+exit
+startx
+poweroff
+fcitx5
+fastfetch
+startx
+fastfetch
+poweroff
+sudo pacman -S tailscaled
+sudo pacman -S tailscale\
+
+systemctl start tailscaled.service 
+sudo tailscale up
+exit
+fcitx5
+startx
+start-hdmi
+start-hdmi
+start-hdmi
+fcitx5
+fcitx5
+sudo pacman -S ssh
+sudo pacman -S openssh
+systemctl start sshd
+systemctl stastus ssh
+systemctl status ssh
+systemctl status sshd
+clear
+systemctl stop sshd
+ssh namduongit@192.168.1.109
+ssh namduongit@192.168.1.109
+reboot
+reboot
+xrandr --output eDP-1 --mode 1920x1280 --rate 60
+xrandr
+xrandr --output eDP1 --mode 1920x1080 --rate 60
+xrandr
+exit
+nproc
+exit
+nvim /etc/makepkg.conf
+exit
+yay -S brave
+clear
+yay -S brave
+clear
+exit
+sudo pacman -Ss brave
+clear
+exit
+ls
+cd .local
+ls
+cd bin
+ls
+cd screenshot
+ls
+cd ..
+ls
+cd dwmbar
+ls
+code .
+exit
+pavucontrol
+btop
+exit
+nvim /etc/makepkg.conf
+sudo nvim /etc/makepkg.conf
+yay -S brave
+cd .cache
+ls
+cd ..
+ls -la
+cd .c
+cd .cache
+ls
+cd yay
+ls
+rm -rf brave
+exit
+yay -S 	brave-bin
+yay -Rns 	brave-bin
+clear
+yay -S brave-bin
+yay -Rns brave-bin
+sudo pacman -S ttf-liberation \\
+ttf-joypixels \\
+ttf-font-awesome \\
+adobe-source-han-sans-otc-fonts \\
+otf-latinmodern-math \\
+terminus-font \\
+ttf-jetbrains-mono \\
+ttf-jetbrains-mono-nerd
+sudo pacman -S ttf-liberation \\
+ttf-joypixels \\
+ttf-font-awesome \\
+adobe-source-han-sans-otc-fonts \\
+otf-latinmodern-math \\
+terminus-font \\
+ttf-jetbrains-mono \\
+ 
+sudo pacman -S ttf-liberation \\
+ttf-joypixels \\
+ttf-font-awesome \\
+adobe-source-han-sans-otc-fonts \\
+otf-latinmodern-math \\
+terminus-font \\
+ttf-jetbrains-mono
+sudo pacman -S ttf-liberation \\
+ttf-font-awesome \\
+adobe-source-han-sans-otc-fonts \\
+otf-latinmodern-math \\
+terminus-font \\
+ttf-jetbrains-mono
+clear
+ls
+ls -la
+nvim .zshrc
+fc-list
+cd /usr/share/font
+ls
+cd /usr/share/fonts
+ls
+cd ..
+cd
+cd .config
+mkdir fontconfig
+cd fontconfig
+nvim fonts.conf
+fcitx
+fcitx5
+cat .config/fontconfig/fonts.conf
+exit
+cd Downloads
+ls
+cd 
+rm -rf .config/fontconfig
+cd Downloads
+ls
+rm Arial Consolas arial-font.zip Consolas-Font.zip downloadgetcookieforfplus.zip cookie-fb Noto_Sans,Roboto.zip times-new-roman-cufonfonts.zip TimeNewRoman
+rm -rf Arial Consolas arial-font.zip Consolas-Font.zip downloadgetcookieforfplus.zip cookie-fb Noto_Sans,Roboto.zip times-new-roman-cufonfonts.zip TimeNewRoman
+ls
+ls
+unzip Noto_Sans,Roboto.zip -d Noto
+mv Noto/*.ttf ~/.fonts
+cd Noto
+ls
+mv Roboto/*.ttf ~/.fonts
+fc-cache -fv
+mv Noto_Sans/*.ttf ~/.fonts
+fc-cache -fv
+cd 
+cd .config
+cd ..
+cd .fonts
+ls
+rm -rf consolai.ttf consolaz.ttf Roboto-* arial.ttf Arialn.ttf ArialTh.ttf ARIBL0.ttf
+ls
+rm -rf NotoSans-*
+ls
+rm -rf Consolas.ttf
+ls
+rm -rf times.ttf
+clear
+ls
+pacman -Rns ttf-liberation ttf-font-awesome adobe-source-han-sans-otc-fonts otf-latinmodern-math terminus-font ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+sudo pacman -Rns ttf-liberation ttf-font-awesome adobe-source-han-sans-otc-fonts otf-latinmodern-math terminus-font ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+sudo pacman -Rns ttf-liberation adobe-source-han-sans-otc-fonts otf-latinmodern-math terminus-font ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+fc-cache -fv
+fc-list
+clear
+cd 
+exot
+exit
+cat .config/zsh/zsh-vimode
+nvim .config/zsh/
+cd .config/zsh/
+;s
+ls
+nvim .zshrc
+cd 
+cat .zshrc
+exit
+nvim .zshrc
+clear
+cd .config
+cd zsh
+ls
+ls -la
+nvim .zshrc
+cat .zshrc
+cd .config/zsh
+ls
+cat .zshrc
+cd 
+nvim .zshrc
+startx
+clear
+startx
+poweroff
+ls
+cat namduong.log
+sudo pacman -S lib32-nvidia-utils
+sudo pacman -S libva-nvidia-driver
+grep -Ri nouveau /etc/X11/xorg.conf.d /usr/share/X11/xorg.conf.d\
+
+glxinfo | grep "OpenGL renderer"\
+
+clear
+exit
+cd builds
+ls
+cd dotfiles
+code .
+exit
