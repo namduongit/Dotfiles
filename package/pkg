@@ -67,3 +67,8 @@ unrar
 unzip
 zip
 ueberzugpp
+gnome-keyring
+libsecret
+seahorse
+xkeyboard-config
+polkit-gnome
