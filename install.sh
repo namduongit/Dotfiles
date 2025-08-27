@@ -1,3 +1,5 @@
+#!/bin/bash
+
 HOME_PATH="$HOME"
 LOCAL_PATH="$HOME/.local"
 
@@ -17,6 +19,12 @@ createDir() {
     mkdir -p "$HOME_PATH/.local/bin"
 }
 
+moveBuildConfig() {
+    cp -r "./config/*" "$HOME_PATH/.config"
+    cp -r "./fonts/*" "$HOME_PATH/.fonts"
+    cp -r "./builds/dwmbar" "$HOME_PATH/.local/bin"
+}
+
 installDWM() {
     cd "$HOME_PATH/builds" && git clone "$MY_DWM" && cd dwm && make clean install && cd -
     read -p "Do you want to download my image? (y/n): " choice
@@ -25,17 +33,6 @@ installDWM() {
     else
         echo "Skip install images."
     fi
-}
-
-buildTouchPad() {
-    # Touchpad script of ttasc. Thank you to the author for allowing me to use it. 
-    sudo cp -r "./builds/X11/30-touchpad.conf" /etc/X11/xorg.conf.d/30-touchpad.conf
-}
-
-moveBuildConfig() {
-    cp -r "./config/*" "$HOME_PATH/.config"
-    cp -r "./fonts/*" "$HOME_PATH/.fonts"
-    cp -r "./builds/dwmbar" "$HOME_PATH/.local/bin"
 }
 
 buildYay() {
@@ -73,6 +70,10 @@ installPackage() {
     done < "./package/pkg"
 }
 
+buildTouchPad() {
+    sudo cp -r "./builds/X11/30-touchpad.conf" /etc/X11/xorg.conf.d/30-touchpad.conf
+}
+
 moveProfile() {
     cp -r ".xinitrc" "~/"
     cp -r ".zprofile" "~/"
@@ -80,11 +81,28 @@ moveProfile() {
     cp -r "./builds/Goku-Kamehameha.png" "$HOME_PATH/Pictures/desktop"
 }
 
+symlinkConfig() {
+    # Zshrc
+    mkdir -p ~/.config/zsh ~/.cache/zsh ~/.config/zsh/plugins
+    mv ~/.zshrc ~/.config/zsh/.zshrc
+    ln -s ~/.config/zsh/.zshrc ~/.zshrc
+    # NVM
+    mv ~/.nvm ~/.config/nvm
+    # Docker
+    mkdir -p ~/.config/docker
+    mv ~/.docker ~/.config/docker
+    ln -s ~/.config/docker ~/.docker
+    # Zsh profile
+    mkdir -p ~/.config/zsh
+    mv ~/.zprofile ~/.config/zsh/.zprofile
+    ln -s ~/.config/zsh/.zprofile ~/.zprofile
+}
+
 main() {
     createDir
-    installDWM
     moveBuildConfig
-
+    
+    installDWM
     installYay
     installNvidiaGraphic
     installIntelGraphic
@@ -93,6 +111,8 @@ main() {
     buildTouchPad
 
     moveProfile
+
+    symlinkConfig
 
     reboot
 }

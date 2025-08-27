@@ -10,12 +10,11 @@ feh --bg-fill ~/Pictures/desktop/Goku-Kamehameha.png
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Start gnome-keyring daemon
-eval $(gnome-keyring-daemon --start --components=secrets,pkcs11,ssh)
+# Start gnome-keyring daemon
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 export SSH_AUTH_SOCK
-
-# Fontconfig
-export FONTCONFIG_PATH=/etc/fonts
-fc-cache -f -v
+export GPG_AGENT_INFO
+export GNOME_KEYRING_CONTROL
 
 # Start dwm
 exec dwm

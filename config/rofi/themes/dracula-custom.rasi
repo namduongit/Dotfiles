@@ -1,7 +1,7 @@
 configuration {
-    font: "JetBrainsMono Nerd Font 12";
+    font: "0xProto Nerd Font Regular 12";
     drun-display-format: "{name}";
-    display-drun: "󱙈 Search:";
+    display-drun: "Search:";
     show-icons: true;
     icon-theme: "Papirus";
 }
@@ -21,7 +21,6 @@ window {
     background-color: #282a36;
     border: 2px;
     border-color: #44475a;
-    border-radius: 8px;
 }
 
 // Search - Input
@@ -33,7 +32,7 @@ inputrow {
 
 prompt {
     text: "Search:";
-    font: "JetBrainsMono Nerd Font Bold 13";
+    font: "0xProto Nerd Font Regular 13";
     text-color: #f8f8f2;
     background-color: transparent;
     padding: 2px 0;
