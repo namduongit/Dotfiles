@@ -68,7 +68,7 @@ function installDWM() {
 }
 
 function installYay() {
-    cd "$HOME_PATH/Builds" && git clone "$YAY" && cd yay && makepkg -si && cd -
+    cd "$HOME_PATH/Builds" && git clone "$GIT_YAY" && cd yay && makepkg -si && cd -
     echo "Install some package from AUR"
     while IFS= read -r pkg || [[ -n "$pkg" ]]; do
         [[ -z "$pkg" ]] && continue
